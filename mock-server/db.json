@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "test@test.com",
+      "password": "password",
+      "token": "abc123token"
+    }
+  ],
+  "orders": [],
+  "payments": []
+}

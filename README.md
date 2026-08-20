@@ -235,3 +235,14 @@ Workflow File:
 
 GitHub:
 https://github.com/ashvinibomble03/fleetpanda-oms-automation
+## AI Testing Approach
+
+The framework documentation includes AI testing considerations covering:
+
+- Non-deterministic output validation
+- Response quality evaluation
+- AI reliability challenges
+- Hallucination and safety considerations
+
+Refer:
+docs/AI_Testing_Thought_Process.md

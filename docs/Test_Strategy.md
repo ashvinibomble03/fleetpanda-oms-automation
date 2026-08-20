@@ -68,7 +68,37 @@ Automation is implemented using:
 - Defects are identified using logs, API responses and validation failures.
 
 
-## 5. Test Coverage
+## 5. Test Pyramid Approach
+
+The automation framework follows a balanced test pyramid approach to achieve faster execution, better stability, and efficient test coverage.
+
+### Unit Testing
+
+- Validates individual components and business logic.
+- Ensures core functionalities work as expected at component level.
+
+### API Testing
+
+- Covers the majority of automation scenarios.
+- Validates:
+  - Authentication APIs
+  - Order creation APIs
+  - Payment processing APIs
+  - Response payloads
+  - Business rules
+  - Error handling
+
+API-level automation provides faster and more reliable validation compared to UI testing.
+
+### UI Testing
+
+- Limited UI validation for critical end-to-end user journeys.
+- Focuses on validating important user workflows from an application perspective.
+
+The framework prioritizes API automation because OMS business workflows are service-driven and API validation provides faster, stable, and maintainable test execution.
+
+
+## 6. Test Coverage
 
 
 ### Positive Scenarios
@@ -87,7 +117,7 @@ Automation is implemented using:
 - Validation of error responses
 
 
-## 6. Data Validation Strategy
+## 7. Data Validation Strategy
 
 Data consistency is validated by comparing:
 
@@ -105,7 +135,7 @@ Validated fields:
 - Order Status
 
 
-## 7. Risks and Edge Cases
+## 8. Risks and Edge Cases
 
 
 | Risk | Mitigation |
@@ -117,7 +147,7 @@ Validated fields:
 | Service dependency failure | Validate proper error responses |
 
 
-## 8. Assumptions
+## 9. Assumptions
 
 - OMS APIs are simulated using a mock server.
 - Database validation is implemented using a mock database layer.
@@ -125,7 +155,7 @@ Validated fields:
 - API contracts are based on available requirements.
 
 
-## 9. Exit Criteria
+## 10. Exit Criteria
 
 Testing is considered complete when:
 
